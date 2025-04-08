@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+/* ----------main------- */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 246, 246);
+}
+main {
+  
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+/* ----------logo----------- */
+.logo {
+  margin-top: 15px;
+}
+.logo img {
+  height: 110px;
+}
+/* ----------form------- */
+.form {
+  position:relative;
+  margin-top: -10px;
+  height:310px;
+  width: 400px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: -1px 1px 10px 3px rgba(114, 111, 111, 0.2);
+  outline: none;
+  padding: 8px;
+backdrop-filter: blur(20px);
+}
+form {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+  gap: 5px;
+}
+.h2h{
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+  padding:24px,0,16px,0;
+}
+form input, .log{
+  width:100%;
+  margin-top:10px;
+  padding:15px;
+  border-radius:6px;
+  border:1px solid rgba(0, 0, 0, 0.2)
+}
+form input::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  font-weight:500;
+  color:rgba(0, 0, 0, 0.3)
+
+}
+.log{
+  background-color:#1877f2;
+  border:none;
+  font-size:18px;
+  font-weight:700;
+  color:white;
+  cursor: pointer;
+}
+
+.para{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para a{
+  text-decoration:none;
+  font-size:14px;
+  margin-top:20px;
+ margin-left:10px;
+ color:#1877f2
+}
+
+.para a:hover{
+  text-decoration:underline;
+}
+.first,.second, .copy{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin:20px; ;
+  padding:0 15px;
+}
+
+.first a, .second a, .copy{
+ text-decoration: none;
+ font-size:12px;
+ margin-left:10px;
+ line-height: 1.6;
+ 
+ gap:20px;
+ color:rgba(0, 0, 0, 0.5)
+}
+.first span,.second, .copy{
+  margin:20px;
+}
+.copy{
+  font-size: 11px;
+  margin-left:30px;
+}
+
+.first a:hover{
+  text-decoration: underline;
+}
+
+.second a:hover{
+   text-decoration: underline;
+}
+.first a:first-child:hover{
+  cursor:text;
+  text-decoration:none;
+}
+
+@media screen and (min-width:900px){
+
+  body{ margin:0 15%;}
+}
